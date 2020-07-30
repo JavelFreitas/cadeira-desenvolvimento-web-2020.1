@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trabalho 2 Cadastro</title>
+    </head>
+
+    <body>
+        <h1>Promoção Celular + capinha gratis</h1>
+        <form action="/promotions/promotionWinner" method="POST" target="_blank">
+            <div class="userInfo">
+                
+                <label for="userFullName">Qual seu nome completo? </label>
+                <input 
+                    type="text" 
+                    name="userFullName" 
+                    placeholder="Seu nome aqui =D"
+                    id="userFullName" 
+                    tabindex="1"
+                    required
+                ><br>
+                
+                <label for="userCPF">Sabe seu CPF decorado? </label>
+                <input 
+                    type="text" 
+                    name="userCPF" 
+                    id="userCPF"
+                    placeholder="XXX.XXX.XXX"
+                    pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}"
+                    size="11"
+                    maxlength="11"
+                    tabindex="2"
+                    required
+                ><br>
+                
+                <label for="userBirthday">E sua data de nascimento? </label>
+                <input 
+                    type="date" 
+                    name="userBirthday" 
+                    id="userBirthday" 
+                    min="1900-01-01" 
+                    max="2020-07-31"
+                    tabindex="3"
+                    required
+                ><br>
+
+                <label for="userTelNumber"> Qual seu número de telefone? </label>
+                <input 
+                    type="tel" 
+                    name="userTelNumber" 
+                    id="userTelNumber" 
+                    placeholder="X-XXXX-XXXX"
+                    pattern="[0-9]{1}-[0-9]{4}-[0-9]{4}" 
+                    maxlength="11"
+                    size="11"
+                    tabindex="4"
+                ><br>
+
+                <label for="userCEP">Queremos saber seu CEP para entregar seu celular novinho em folha:</label>
+                <input 
+                    type="text" 
+                    name="userCEP" 
+                    id="userCEP"
+                    placeholder="XXXXX-XXX" 
+                    pattern="[0-9]{5}-[0-9]{3}" 
+                    maxlength="9"
+                    size="9"
+                    tabindex="5"
+                    required
+                ><br>
+
+                <label for="userAddress">E seu endereço:</label>
+                <input 
+                    type="text" 
+                    name="userAddress" 
+                    id="userAddress"
+                    placeholder="Seu endereço aqui" 
+                    tabindex="6"
+                    required
+                ><br>
+
+                <label for="userEmail">Por onde podemos te mandar nossas novidades? </label>
+                <input 
+                    type="email" 
+                    name="userEmail" 
+                    id="userEmail"
+                    placeholder="email@email.com"
+                    tabindex="7"
+                ><br>
+            </div>
+
+            <div class="promotionInfo">
+                
+                <div id="caseColorQuestion">Qual a cor da sua capinha gratuita?</div><br>
+
+                <label for="black">Preto</label>
+                <input type="radio" name="phoneColor" id="black" tabindex="8" checked><br>
+
+                <label for="blue">Azul</label>
+                <input type="radio" name="phoneColor" id="blue" tabindex="9"><br>
+
+                <label for="red">Vermelho</label>
+                <input type="radio" name="phoneColor" id="red" tabindex="10"><br>
+
+                <br>
+                
+                <div id="gadgetQuestion"> Quais acessórios você gostaria de ter em uma próxima promoção?</div><br>
+                
+                <label for="smartWatch">Relógios Smart</label>
+                <input type="checkbox" name="nextGadgets" id="smartWatch" tabindex="11"><br>
+
+                <label for="bluetoothEarbuds">Bluetooth Earbuds</label>
+                <input type="checkbox" name="nextGadgets" id="bluetoothEarbuds" tabindex="12"><br>
+
+                <label for="wirelessCharger">Carregador sem fio</label>
+                <input type="checkbox" name="nextGadgets" id="wirelessCharger" tabindex="13"><br><br>
+                
+
+                <label for="caseImage">Gostaria de uma imagem específica para sua capinha?</label><br>
+                <input type="file" name="caseImage" id="caseImage" tabindex="14"><br><br>
+
+                
+                <label for="searchBar">Se precisar saber de algo, use nossa barra de pesquisa</label><br>
+                <input type="search" name="searchBar" id="searchBar" tabindex="15"><br><br>
+
+
+                <input type="submit" value="Enviar Respostas" tabindex="16"> <br>
+            </div>
+        </form>
+
+
+    </body>
+
+
+</html>

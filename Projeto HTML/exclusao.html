@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trabalho 2 Exclusão</title>
+    </head>
+
+    <body>
+        <h1>Promoção Celular + capinha gratis</h1>
+        <h2>Suas Informações</h2>
+        <h5>Respeitamos sua privacidade, você pode apagar qualquer informação sua a qualquer momento</h5>
+        <form>
+            <div class="userInfo">
+                
+                <label for="userFullName">Nome: </label>
+                <input 
+                    type="text" 
+                    name="userFullName" 
+                    id="userFullName" 
+                    tabindex="1"
+                    value="José"
+                    disabled
+                ><button>Apagar</button><br>
+                
+                <label for="userCPF">CPF: </label>
+                <input 
+                    type="text" 
+                    name="userCPF" 
+                    id="userCPF"
+                    value="123.123.456"
+                    pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}"
+                    size="11"
+                    maxlength="11"
+                    tabindex="2"
+                    disabled
+                ><button>Apagar</button><br>
+                
+                <label for="userBirthday">Data de nascimento: </label>
+                <input 
+                    type="date" 
+                    name="userBirthday" 
+                    id="userBirthday" 
+                    value="2020-07-30"
+                    min="1900-01-01" 
+                    max="2020-07-31"
+                    tabindex="3"
+                    disabled
+                ><button>Apagar</button><br>
+
+                <label for="userTelNumber"> Número de telefone: </label>
+                <input 
+                    type="tel" 
+                    name="userTelNumber" 
+                    id="userTelNumber" 
+                    value="9-9999-9999"
+                    pattern="[0-9]{1}-[0-9]{4}-[0-9]{4}" 
+                    maxlength="11"
+                    size="11"
+                    tabindex="4"
+                    disabled
+                ><button>Apagar</button><br>
+
+                <label for="userCEP">CEP:</label>
+                <input 
+                    type="text" 
+                    name="userCEP" 
+                    id="userCEP"
+                    value="64400-020" 
+                    pattern="[0-9]{5}-[0-9]{3}" 
+                    maxlength="9"
+                    size="9"
+                    tabindex="5"
+                    disabled
+                ><button>Apagar</button><br>
+
+                <label for="userAddress">Endereço:</label>
+                <input 
+                    type="text" 
+                    name="userAddress" 
+                    id="userAddress"
+                    value="Rua Abacate, número 2" 
+                    tabindex="6"
+                    disabled
+                ><button>Apagar</button><br>
+
+                <label for="userEmail">E-mail: </label>
+                <input 
+                    type="email" 
+                    name="userEmail" 
+                    id="userEmail"
+                    value="jose@jose.com"
+                    tabindex="7"
+                    disabled
+                ><button>Apagar</button><br>
+            </div>
+
+            
+        </form>
+
+
+    </body>
+
+
+</html>
